@@ -1,0 +1,14 @@
+{
+  "name": "planverde",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sass css/:css/ --no-source-map",
+    "dev": "sass --watch css/:css/ --no-source-map"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}

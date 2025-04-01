@@ -1,0 +1,13 @@
+// Mixin para sombras suaves
+@mixin sombra-suave {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+// Mixin para manejo responsive
+@mixin respond-to($breakpoint) {
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+    @media (min-width: map-get($grid-breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}

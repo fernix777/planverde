@@ -1,0 +1,125 @@
+.conteiner-principal {
+  position: relative;
+  z-index: 1;
+  margin-top: 90px;
+  background-image: url(../assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 90vh;
+  text-align: center;
+
+  h1 {
+    padding-top: 300px;
+    font-size: 56px;
+    color: $blanco;
+  }
+
+  p {
+    color: $blanco;
+    padding: 18px 0;
+  }
+
+  .cta {
+    background-color: rgba($blanco, 0.85);
+    padding: 10px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: $blanco;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: adjust-color($color-primario, $lightness: -10%);
+    }
+  }
+
+  @include respond-to('medium') {
+    h1 {
+      padding-top: 250px;
+      font-size: 64px;
+    }
+  }
+}
+
+$animacion-entrada: 0.5s;
+$transicion-hover: 0.3s;
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reseñas {
+  background-color: rgba($color-primario, 0.05);
+
+  .caja-reseña {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+
+    img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      flex-grow: 1;
+      overflow-y: auto;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+  }
+
+  @include respond-to('medium') {
+    .caja-reseña {
+      padding: 25px;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.galeria {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: $color-primario;
+    }
+  }
+
+  h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,15 @@
+// Archivo principal que importa todos los partials
+@import '../../node_modules/bootstrap/scss/functions';
+@import 'variables';
+@import 'bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import 'mixins';
+@import 'header';
+@import 'footer';
+@import 'mainindex';
+@import 'plagas';
+@import 'jardines';
+@import 'cuidados';
+@import 'contacto';
+@import 'whatsapp';

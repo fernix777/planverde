@@ -1,0 +1,74 @@
+// Estilos específicos de página plagas
+.conteiner-principal-plagas {
+  background-image: url(../assets/img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 90vh;
+  text-align: center;
+
+  h1 {
+    padding: 250px 15px 0;
+    font-size: 56px;
+    color: $blanco;
+    margin-bottom: 2rem;
+  }
+
+  .grid-plagas {
+    @include make-container();
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+
+    .plaga-item {
+    @include make-col-ready();
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+    
+    .img-plaga {
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.03);
+      }
+  
+      @include media-breakpoint-up(md) {
+        height: 300px;
+      }
+    }
+    
+    transition: transform $transicion-hover, box-shadow $transicion-hover;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+  }
+
+  @include respond-to('medium') {
+    h1 {
+      font-size: 64px;
+      padding-top: 300px;
+    }
+  }
+
+  @include respond-to('large') {
+    height: 100vh;
+    h1 {
+      font-size: 72px;
+    }
+  }
+}

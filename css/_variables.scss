@@ -1,0 +1,33 @@
+// Colores personalizados
+$color-primario: #1e7a04 !default;
+$color-secundario: #3ddd08 !default;
+
+// Mapeo a variables de Bootstrap
+$primary: $color-primario !default;
+$secondary: $color-secundario !default;
+$success: $color-primario !default;
+$info: #0dcaf0 !default;
+$warning: #ffc107 !default;
+$danger: #dc3545 !default;
+$light: #f8f9fa !default;
+$dark: $negro !default;
+$blanco: #fff !default;
+$negro: #000 !default;
+
+// Mapa de breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;

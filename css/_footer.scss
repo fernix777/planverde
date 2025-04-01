@@ -1,0 +1,34 @@
+// Estilos del footer
+footer {
+    background-color: $color-primario;
+    padding: 20px;
+    text-align: center;
+    color: $blanco;
+    margin-top: auto;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .redes-sociales {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 10px;
+
+        a {
+            color: $blanco;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $color-secundario;
+            }
+        }
+    }
+}
