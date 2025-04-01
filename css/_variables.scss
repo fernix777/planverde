@@ -1,6 +1,8 @@
-// Colores personalizados
-$color-primario: #1e7a04 !default;
+// Variables de color
+$color-primario: #2ea506 !default;
 $color-secundario: #3ddd08 !default;
+$blanco: #fff !default;
+$negro: #000 !default;
 
 // Mapeo a variables de Bootstrap
 $primary: $color-primario !default;
@@ -9,10 +11,9 @@ $success: $color-primario !default;
 $info: #0dcaf0 !default;
 $warning: #ffc107 !default;
 $danger: #dc3545 !default;
+$color-error: #dc3545 !default;
 $light: #f8f9fa !default;
 $dark: $negro !default;
-$blanco: #fff !default;
-$negro: #000 !default;
 
 // Mapa de breakpoints
 $grid-breakpoints: (
